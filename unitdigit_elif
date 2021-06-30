@@ -1,0 +1,17 @@
+#! /bin/bash -x
+read -p "Enter the number:" num
+#-le less than equal to
+#-gt greater equal to
+
+if (( ($num<=9) && ($num>=9) ))
+then
+        echo "The unit digit number is once"
+elif (( ($num > 9) & ($num <= 99) ))
+then
+        echo "The unit digit number is Tens"
+elif (( ($num > 99) & (num <= 999) ))
+then
+        echo "The unit digit number is Hundred"
+else
+        echo "The entered number is not inbetween 0 to 999"
+fi
